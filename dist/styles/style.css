@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background-color: rgb(50, 50, 50);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: rgb(30, 30, 30);
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+}
+
+li a {
+    font-family: 'Lalezar', cursive;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    height: 3rem;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: rgb(38, 82, 153);
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(38, 82, 153);
+    color: white;
+}
+
+
+.main-content {
+    padding-top: 1rem;
+    margin-left: 25%;
+}

@@ -5,19 +5,19 @@
                  enabled: true,
                  requireBase: false
             });
-        
         $stateProvider
             .state('home', {
                 url: '/',
+                controller: 'HomeCtrl as home',
                 templateUrl: '/templates/home.html'
             });
+        console.log("working?")
     }
     
     angular
-        .module('blocitoff', ['firebase', 'ui.router'])
+        .module('blocitoff', ['firebase','ui.router'])
         .config(config);
 })();
-
 
 //TODO
 //    

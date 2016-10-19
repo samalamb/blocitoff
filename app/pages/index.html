@@ -3,26 +3,46 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Base Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/home.css">
 </head>
 <body>
-    
+
+    <nav role="main">
+        <ul class="links">
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="new-task">Create New</a></li>
+            <li><a ui-sref="active">Active Tasks</a></li>
+            <li><a ui-sref="completed">Completed Tasks</a></li>
+        </ul>
+    </nav>
+
     <ui-view></ui-view>
-    
+
+    <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    <!-- UI-Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    
     <script>
-        var config = {
-            apiKey: 'AIzaSyDUDqWW4LMlb_oeKf7oGJKtFh-vzMdMLaM',
-            authDomain: "blocitoff-1fe19.firebaseapp.com",
-            databaseURL: "https://blocitoff-1fe19.firebaseio.com",
-            storageBucket: "blocitoff-1fe19.appspot.com"
-        };
+//       Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyB0kj7y8ie0-ee5gzOiBv1a8mcBgbNHTYo",
+            authDomain: "blocitoff-3505f.firebaseapp.com",
+            databaseURL: "https://blocitoff-3505f.firebaseio.com",
+            storageBucket: "blocitoff-3505f.appspot.com"
+          };
         
-        firebase.initializeApp(config);
+          firebase.initializeApp(config);
     </script>
+    
     <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/HomeCtrl.js"></script>
 </body>
 </html>
