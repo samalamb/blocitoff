@@ -3,8 +3,8 @@
     
     <div class="container">
         <ul class="items">
-            <li class="list-item" ng-repeat="t in tasks">
-                <span class="ion-record"></span>{{t.text}}
+            <li class="list-item" ng-repeat="task in tasks" ng-hide="hideTask(task)">
+                <span class="ion-record"></span>{{task.task}}
             </li>
         </ul>
     </div>    

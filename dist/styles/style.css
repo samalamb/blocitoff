@@ -3,7 +3,7 @@ body {
     background-color: rgb(50, 50, 50);
 }
 
-ul {
+.links {
     list-style-type: none;
     margin: 0;
     padding: 0;

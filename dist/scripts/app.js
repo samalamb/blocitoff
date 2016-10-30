@@ -15,8 +15,12 @@
                 url: '/active',
                 controller: 'ActiveCtrl as active',
                 templateUrl: 'templates/active.html'
+            })
+            .state('create', {
+                url: '/create',
+                controller: 'CreateCtrl as create',
+                templateUrl: 'templates/create.html'
             });
-        console.log("working?")
     }
     
     angular
