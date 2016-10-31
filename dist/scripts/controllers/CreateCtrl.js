@@ -9,9 +9,6 @@
                 completed: false
             });
         };
-        $scope.completeTask = function(){
-            
-        };
     }
 
     angular

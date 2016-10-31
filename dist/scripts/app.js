@@ -20,6 +20,11 @@
                 url: '/create',
                 controller: 'CreateCtrl as create',
                 templateUrl: 'templates/create.html'
+            })
+            .state('completed',{
+                url: '/completed',
+                controller: 'CompletedCtrl as completed',
+                templateUrl: 'templates/completed.html'
             });
     }
     
