@@ -6,6 +6,7 @@
             $scope.tasks.$add({
                 task: $scope.newTaskText,
                 createdAt: Date.now(),
+                priority: $scope.newTaskPriority,
                 completed: false
             });
         };

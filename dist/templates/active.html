@@ -3,8 +3,8 @@
     
     <div class="container">
         <ul class="items">
-            <li class="list-item" ng-repeat="task in tasks" ng-hide="hideTask(task)">
-                <span class="ion-record"></span>{{task.task}}<button class="ion-checkmark-circled" ng-click="completeTask(task)"></button>
+            <li class="list-item" ng-repeat="task in tasks | orderBy:'priority'" ng-hide="hideTask(task)">
+                <span class="ion-record"></span>{{task.task}}<span class="ion-checkmark-circled" ng-click="completeTask(task)"></span>
             </li>
         </ul>
     </div>    

@@ -1,10 +1,19 @@
 <section class="main-content">
     <h1 class="header">Create a Task!</h1>
     
-    <form name="createForm" ng-submit="addTask()">
+    <form id="create-form" name="createForm" ng-submit="addTask()">
         <label>Task Name</label>
-        <input id="text" ng-model="newTaskText">
-        <button value="clear">Create Task</button>
+        <input type="text" id="text" ng-model="newTaskText">
+        
+        <label>Priority</label>
+        <select type="text" id="priority" ng-model="newTaskPriority">
+            <option value="" disabled selected>Select Priority</option>
+            <option value="1">High</option>
+            <option value="2">Med</option>
+            <option value="3">Low</option>
+        </select>
+        
+        <input type="submit" value="Create Task">
     </form>
     
 </section>
